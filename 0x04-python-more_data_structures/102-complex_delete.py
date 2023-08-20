@@ -1,20 +1,9 @@
-#include <Python.h>
-
-void print_python_list(PyObject *p);
-void print_python_bytes(PyObject *p);
-
-/**
- * print_python_list - Prints basic info about Python lists.
- * @p: A PyObject list object.
- */
-void print_python_list(PyObject *p)
-{
-	int size, alloc, i;
-	const char *type;
-	PyListObject *list = (PyListObject *)p;
-	PyVarObject *var = (PyVarObject *)p;
-
-	size = var->ob_size;
-	alloc = list->allocated;
-
-	printf("[*] Python list info\n");
+#!/usr/bin/python3
+def complex_delete(a_dictionary, value):
+    """
+     A function that deletes keys with a specific value in a dictionary.
+    """
+    for key in list(a_dictionary.keys()):
+        if a_dictionary[key] == value:
+            del a_dictionary[key]
+    return a_dictionary
