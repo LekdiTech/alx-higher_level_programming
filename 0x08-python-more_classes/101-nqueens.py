@@ -144,3 +144,4 @@ if __name__ == "__main__":
     print("Found %d solutions" % len(solutions))
 
     sys.exit(0)
+# End of 101-nqueens.py
